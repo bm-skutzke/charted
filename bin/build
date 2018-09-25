@@ -24,7 +24,7 @@ const BABEL_PRESETS = [
   "babel-preset-stage-0"
 ]
 
-const ENV = {dev: true}
+const ENV = {dev: false}
 
 function main(args) {
   let cmds = args.slice(2).filter((cmd) => {
