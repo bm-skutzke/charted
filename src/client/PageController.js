@@ -10,7 +10,7 @@ const MIN_30 = 1000 * 60 * 30
 export const EDITABLES = ['title', 'note'];
 export const OPTIONS = {
   // Default values are first
-  type: ['column', 'line'],
+  type: ['line', 'column'],
   rounding: ['on', 'off']
 }
 
@@ -127,7 +127,7 @@ export class PageController {
    */
   render(): void {
     // Set background color
-    let color = this.params.isLight() ? 'light' : 'dark'
+    let color = this.params.isLight() ? 'dark' : 'light'
     this.$body.addClass(color)
 
     // Set embed style
